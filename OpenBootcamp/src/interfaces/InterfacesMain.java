@@ -1,6 +1,7 @@
 package interfaces;
 
 import OpenBootcamp.Coche;
+import OpenBootcamp.CocheElectrico;
 
 public class InterfacesMain {
 
@@ -10,12 +11,18 @@ public class InterfacesMain {
 		
 		CocheService service1 = new CocheServiceClassicImpl();
 		CocheService service2 = new CocheServiceGasoleroImpl();
+		Coche coche4 = new Coche("Blanco", "fiat", "punto", 1211.22, 2.33);
+		Coche coche3 = new CocheElectrico("V3");
+		
 		
 		Coche coche1 = service1.crearCocheDemo();
 		Coche coche2 = service2.crearCocheDemo();
 		
-		service1.destruirCoche(coche1);
-		service2.destruirCoche(coche2);
+		coche4.acelerar(100);
+		
+
+		service1.destruirCoche(coche3);
+		service1.destruirCoche(coche4);
 		
 	}
 
