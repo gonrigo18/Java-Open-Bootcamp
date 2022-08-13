@@ -12,7 +12,7 @@ public class ArraysMain {
 		
 		String[] nombres = new String[4];
 		String[] nombres2 = new String[] { nombre1, nombre2, nombre3, nombre4} ;
-		int[] nummeros = new int[5];
+		int[] numeros = new int[5];
 		Coche[] coches = new Coche[2];
 		
 		

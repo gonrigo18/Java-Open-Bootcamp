@@ -12,9 +12,8 @@ public class Coche {
 	int velocidad =0;
 	
 	// constructor
-	public Coche() {
-		
-	}
+	
+	public Coche() {};
 	
 	public Coche(String color, String fabricante, String modelo, Double peso, Double largo) {
 		this.color = color;
